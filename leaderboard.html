@@ -4,15 +4,21 @@
 
 <body>
         <h1>Leaderboard</h1>
+
+        <p>{{> loginButtons}}</p>
+
+
         {{> leaderboard}}
 </body>
     
 <template name="leaderboard">
+    {{#if currentUser}}
         {{> addPlayerForm}}
         <ul>
             {{#each player}}
                 <li class="player {{selectedClass}}">{{name}}: {{score}}</li>
             {{/each}}
+            
             {{#if selectedPlayer}}
                 <li>Selected Player: {{selectedPlayer.name}}</li>
                 <li>
@@ -22,6 +28,9 @@
                 </li>
             {{/if}}
         </ul>
+    {{else}}
+        <p>You must be logged-in to see this content.</p>
+    {{/if}}
 </template>
 
 
