@@ -1,7 +1,7 @@
 Meteor Leaderboard application
 =====================================
 
-Just a simple application to learn how to use Meteor.
+Just a simple application to learn how to use the [Meteor framework](https://www.meteor.com/).
 
 This application is described in the book "Your First Meteor Application. A Complete Beginner's Guide to Meteor.js" by David Turnbull.
 
